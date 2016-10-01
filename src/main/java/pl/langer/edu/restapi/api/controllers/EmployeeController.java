@@ -17,6 +17,8 @@ import pl.langer.edu.restapi.services.models.employee.EmployeeInModel;
 import javax.validation.Valid;
 import java.util.List;
 
+import static java.lang.String.format;
+
 /**
  * Created by Damian Langer on 30.09.16.
  */
@@ -36,7 +38,7 @@ public class EmployeeController {
     public HttpEntity<BaseApiResponse> findOne(@PathVariable("id") final Long employeeId,
                                                WebRequest request) throws NotFoundException {
         final EmployeeDetailsModel employee = this.employeeService.findOne(employeeId);
-        final BaseApiResponse response  = new BaseApiResponse(String.format("Employee with id %s details", employeeId),
+        final BaseApiResponse response  = new BaseApiResponse(format("Employee with id %s details", employeeId),
                 request,
                 employee);
         return new ResponseEntity<>(response, HttpStatus.OK);
@@ -70,7 +72,7 @@ public class EmployeeController {
                                                       @RequestBody @Valid EmployeeInModel employeeInModel,
                                                       WebRequest request) throws NotFoundException {
         this.employeeService.update(employeeId, employeeInModel);
-        BaseApiResponse response  = new BaseApiResponse(String.format("Employee with id %s updated", employeeId),
+        BaseApiResponse response  = new BaseApiResponse(format("Employee with id %s updated", employeeId),
                 request,
                 null);
         return new ResponseEntity<>(response, HttpStatus.ACCEPTED);
@@ -83,7 +85,7 @@ public class EmployeeController {
                                                       @PathVariable("workplaceid") Long workplaceId,
                                                       WebRequest request) throws NotFoundException {
         final boolean assigned = this.employeeService.assignOffice(employeeId, workplaceId);
-        BaseApiResponse response  = new BaseApiResponse(String.format("Employee with id %s %supdated", employeeId,
+        BaseApiResponse response  = new BaseApiResponse(format("Employee with id %s %supdated", employeeId,
                 assigned?"":"not "),
                 request,
                 assigned);
