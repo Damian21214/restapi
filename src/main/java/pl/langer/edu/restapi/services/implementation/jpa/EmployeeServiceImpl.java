@@ -53,6 +53,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         if(null==id) throw new IllegalArgumentException("Id can not be null");
         if(null== employeeInModel) throw new IllegalArgumentException("Employee model can not be null");
         Employee forUpdate = this.employeeRepository.findOne(id);
+        if(null==forUpdate) throw new NotFoundException("Employee not found");
         forUpdate = updateFromModel(forUpdate, employeeInModel);
         this.employeeRepository.save(forUpdate);
     }
@@ -65,6 +66,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         return result;
     }
 
+    @Transactional
     @Override
     public EmployeeDetailsModel findOne(Long id) throws NotFoundException {
         Employee employee = this.getOne(id);

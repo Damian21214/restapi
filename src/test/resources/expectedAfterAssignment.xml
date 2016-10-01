@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <employee id="1" name="DAMIAN1" email="damian1@email.pl" phone="11234567" street="street1" city="KATOWICE"
+              country="POLAND" created_date="2016-01-01 01:01:01.01"/>
+    <employee id="2" name="DAMIAN2" email="damian2@email.pl" phone="21234567" street="street2" city="KATOWICE"
+              country="POLAND" created_date="2016-01-01 01:01:01.01"/>
+    <employee id="3" name="DAMIAN3" email="damian3@email.pl" phone="31234567" street="street3" city="KATOWICE"
+              country="POLAND" created_date="2016-01-01 01:01:01.01"/>
+    <employee id="4" name="DAMIAN4" email="damian4@email.pl" phone="41234567" street="street4" city="KATOWICE"
+              country="POLAND" created_date="2016-01-01 01:01:01.01"/>
+
+    <office id="1" name="OFFICCE1" street="officestreet1" street_no="1" city="KATOWICE" country="POLAND" />
+    <office id="2" name="OFFICCE2" street="officestreet2" street_no="2" city="KATOWICE" country="POLAND" />
+    <office id="3" name="OFFICCE3" street="officestreet3" street_no="3" city="KATOWICE" country="POLAND" />
+
+
+    <!-- Employee #1 work in all three offices -->
+    <employee_office employee_id="1" office_id="1" />
+    <employee_office employee_id="1" office_id="2" />
+    <employee_office employee_id="1" office_id="3" />
+
+    <!-- Employee #2 work in #2 and #3 office -->
+    <employee_office employee_id="2" office_id="2" />
+    <employee_office employee_id="2" office_id="3" />
+
+    <!-- Employee #3 work in #3 office only -->
+    <employee_office employee_id="3" office_id="3" />
+
+    <!-- Employee #4 work in office #1) -->
+    <employee_office employee_id="4" office_id="1" />
+</dataset>

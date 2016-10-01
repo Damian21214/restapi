@@ -9,7 +9,7 @@ import java.util.Set;
  * Created by DLanger on 2016-09-30.
  */
 @Entity
-public class Employee extends AbstractEntity {
+public class Employee extends AbstractAuditableEntity {
     @Column(nullable = false, unique = true, length = 64)
     @Convert(converter = UpperConverter.class)
     private String name;
@@ -24,7 +24,8 @@ public class Employee extends AbstractEntity {
     private String phone;
 
     @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(joinColumns = {
+    @JoinTable(name = "employee_office",
+            joinColumns = {
             @JoinColumn(name = "employee_id")
     },
     inverseJoinColumns = {
