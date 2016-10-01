@@ -36,7 +36,7 @@ jar {
 	version = '0.1-SNAPSHOT'
 	dependsOn asciidoctor
 	from ('documentation/generated/html5') {
-		into 'public/docs'
+		into 'public/doc'
 	}
 }
 
