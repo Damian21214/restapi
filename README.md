@@ -2,6 +2,14 @@
 This is a very simple project for educational purposes. 
 For education import project as gradle project to your favorite IDE (IntelliJ of course ;) )
 
+I've used in memory database (production configuration) for simplicity, so all data are lost.
+Real application should be configure for real database (production), and in memory database (testing).
+
+Employee endpoints are documented only!!!
+Office endpoins are:
+/api/office [post] -> for add new office
+/api/offices [get] -> for list all offices
+
 ### Technologies used
 * Spring Boot
 * Spring Core
