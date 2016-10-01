@@ -42,8 +42,8 @@ include::{includedir}/{controller}/{method}/http-response.adoc[]
 ==== Request
 //===== Request parameters
 //include::{includedir}/{controller}/{method}/request-parameters.adoc[]
-===== Path parameters
-include::{includedir}/{controller}/{method}/path-parameters.adoc[]
+//===== Path parameters
+//include::{includedir}/{controller}/{method}/path-parameters.adoc[]
 ===== Request fields
 include::{includedir}/{controller}/{method}/request-fields.adoc[]
 //===== Headers

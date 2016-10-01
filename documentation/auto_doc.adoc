@@ -14,4 +14,10 @@ v0.1, 2016-10-01
 
 Welcome to sample documentation for educational rest api.
 
+== Service resources
+
+The application has many service resources. You can find complete list of this resources
+under this *_link:/docs[/docs]_*
+
+
 include::EmployeeController.adoc[]
