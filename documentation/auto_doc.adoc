@@ -1,0 +1,17 @@
+:includedir: ../build/generated-snippets
+= Sample documentation for RestApi
+Damian Langer - <damian.langer@gmail.com>
+v0.1, 2016-10-01
+:toc: left
+:toc-title: Table of Contents
+:toclevels: 2
+:sectnums:
+:sectnumslevels: 2
+:sectanchors:
+:imagesdir: assets/images
+:homepage: https://pl.linkedin.com/pub/damian-langer/73/2aa/24a
+:icons: font
+
+Welcome to sample documentation for educational rest api.
+
+include::EmployeeController.adoc[]

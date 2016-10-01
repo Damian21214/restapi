@@ -1,0 +1,158 @@
+== Employee resources
+
+:controller: EmployeeControllerTest
+:method: findOne
+:title: Employee details
+:description: Provide details of a requested employee
+
+=== {title}
+
+{description}
+
+==== Request
+//===== Request parameters
+//include::{includedir}/{controller}/{method}/request-parameters.adoc[]
+===== Path parameters
+include::{includedir}/{controller}/{method}/path-parameters.adoc[]
+//===== Request fields
+//include::{includedir}/{controller}/{method}/request-fields.adoc[]
+//===== Headers
+//include::{includedir}/{controller}/{method}/request-headers.adoc[]
+===== Sample http request
+include::{includedir}/{controller}/{method}/http-request.adoc[]
+===== Sample curl request
+include::{includedir}/{controller}/{method}/curl-request.adoc[]
+==== Response
+===== Fields
+include::{includedir}/{controller}/{method}/response-fields.adoc[]
+===== Headers
+include::{includedir}/{controller}/{method}/response-headers.adoc[]
+====== Sample response
+include::{includedir}/{controller}/{method}/http-response.adoc[]
+
+
+:method: addNewEmployee
+:title: New employee
+:description: Add new employee to system
+
+=== {title}
+
+{description}
+
+==== Request
+//===== Request parameters
+//include::{includedir}/{controller}/{method}/request-parameters.adoc[]
+===== Path parameters
+include::{includedir}/{controller}/{method}/path-parameters.adoc[]
+===== Request fields
+include::{includedir}/{controller}/{method}/request-fields.adoc[]
+//===== Headers
+//include::{includedir}/{controller}/{method}/request-headers.adoc[]
+===== Sample http request
+include::{includedir}/{controller}/{method}/http-request.adoc[]
+===== Sample curl request
+include::{includedir}/{controller}/{method}/curl-request.adoc[]
+==== Response
+===== Fields
+include::{includedir}/{controller}/{method}/response-fields.adoc[]
+===== Headers
+include::{includedir}/{controller}/{method}/response-headers.adoc[]
+====== Sample response
+include::{includedir}/{controller}/{method}/http-response.adoc[]
+
+
+
+:method: updateEmployee
+:title: Update employee
+:description: Update employee details
+
+=== {title}
+
+CAUTION: Unrecoverable operation
+
+WARNING: *name* is ignored, you can not change Employee name
+
+{description}
+
+==== Request
+//===== Request parameters
+//include::{includedir}/{controller}/{method}/request-parameters.adoc[]
+===== Path parameters
+include::{includedir}/{controller}/{method}/path-parameters.adoc[]
+===== Request fields
+include::{includedir}/{controller}/{method}/request-fields.adoc[]
+//===== Headers
+//include::{includedir}/{controller}/{method}/request-headers.adoc[]
+===== Sample http request
+include::{includedir}/{controller}/{method}/http-request.adoc[]
+===== Sample curl request
+include::{includedir}/{controller}/{method}/curl-request.adoc[]
+==== Response
+===== Fields
+include::{includedir}/{controller}/{method}/response-fields.adoc[]
+===== Headers
+include::{includedir}/{controller}/{method}/response-headers.adoc[]
+====== Sample response
+include::{includedir}/{controller}/{method}/http-response.adoc[]
+
+
+:method: findAllEmployees
+:title: Employees collection
+:description: Provide collection of all registered employees.
+
+=== {title}
+
+{description}
+
+==== Request
+//===== Request parameters
+//include::{includedir}/{controller}/{method}/request-parameters.adoc[]
+//===== Path parameters
+//include::{includedir}/{controller}/{method}/path-parameters.adoc[]
+//===== Request fields
+//include::{includedir}/{controller}/{method}/request-fields.adoc[]
+//===== Headers
+//include::{includedir}/{controller}/{method}/request-headers.adoc[]
+===== Sample http request
+include::{includedir}/{controller}/{method}/http-request.adoc[]
+===== Sample curl request
+include::{includedir}/{controller}/{method}/curl-request.adoc[]
+==== Response
+===== Fields
+include::{includedir}/{controller}/{method}/response-fields.adoc[]
+===== Headers
+include::{includedir}/{controller}/{method}/response-headers.adoc[]
+====== Sample response
+include::{includedir}/{controller}/{method}/http-response.adoc[]
+
+
+:method: assignOffice
+:title: Assign office to Employee
+:description: Assign office to employee, one employee can work in many offices.
+
+=== {title}
+
+CAUTION: Unrecoverable operation
+
+{description}
+
+==== Request
+//===== Request parameters
+//include::{includedir}/{controller}/{method}/request-parameters.adoc[]
+===== Path parameters
+include::{includedir}/{controller}/{method}/path-parameters.adoc[]
+//===== Request fields
+//include::{includedir}/{controller}/{method}/request-fields.adoc[]
+//===== Headers
+//include::{includedir}/{controller}/{method}/request-headers.adoc[]
+===== Sample http request
+include::{includedir}/{controller}/{method}/http-request.adoc[]
+===== Sample curl request
+include::{includedir}/{controller}/{method}/curl-request.adoc[]
+==== Response
+===== Fields
+include::{includedir}/{controller}/{method}/response-fields.adoc[]
+===== Headers
+include::{includedir}/{controller}/{method}/response-headers.adoc[]
+====== Sample response
+include::{includedir}/{controller}/{method}/http-response.adoc[]
