@@ -5,6 +5,12 @@ For education import project as gradle project to your favorite IDE (IntelliJ of
 I've used in memory database (production configuration) for simplicity, so all data are lost.
 Real application should be configure for real database (production), and in memory database (testing).
 
+### Possible improvements
+* caching (for example ehcache with Spring Cache Abstraction)
+* security (for example JWT with Spring Security)
+* HATEOS
+* ...
+
 Employee endpoints are documented only!!!
 Office endpoins are:
 /api/office [post] -> for add new office
