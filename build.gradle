@@ -31,6 +31,15 @@ configurations {
 	providedRuntime
 }
 
+jar {
+	baseName = 'restapi'
+	version = '0.1-SNAPSHOT'
+	dependsOn asciidoctor
+	from ('documentation/generated/html5') {
+		into 'public/docs'
+	}
+}
+
 bootRepackage {
 	mainClass = 'pl.langer.edu.restapi.StartRestApi'
 }
@@ -67,6 +76,16 @@ asciidoctor {
 	outputDir = file('documentation/generated')
 	inputs.dir snippetsDir
 	dependsOn test
+}
+
+task('deploy', type: Copy) {
+	delete('deploy')
+	dependsOn(':bootRepackage')
+	from(file('build/libs'))
+	from(file('documentation/generated'))
+
+	into('deploy')
+	include('**/*.jar', '**/*.html', '**/*.pdf', '**/*.sql', '**/*.properties')
 }
 
 dependencies {
