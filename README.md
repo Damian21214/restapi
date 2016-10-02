@@ -1,9 +1,9 @@
 # RestApi EDU
 This is a very simple project for educational purposes. 
-For education import project as gradle project to your favorite IDE (IntelliJ of course ;) )
+For education import the project as a gradle project to your favorite IDE (IntelliJ of course ;) )
 
-I've used in memory database (production configuration) for simplicity, so all data are lost.
-Real application should be configure for real database (production), and in memory database (testing).
+I've used in memory database (production configuration) for simplicity, so all data are lost between runs.
+The real application should be configured for a real database (production), and in memory database (for testing).
 
 ### Possible improvements
 * caching (for example ehcache with Spring Cache Abstraction)
@@ -11,7 +11,7 @@ Real application should be configure for real database (production), and in memo
 * HATEOS
 * ...
 
-Employee endpoints are documented only!!!
+Only employee endpoints are documented!!!
 Office endpoins are:
 /api/office [post] -> for add new office
 /api/offices [get] -> for list all offices
@@ -30,7 +30,7 @@ Office endpoins are:
 * AsciiDoctor
 * Gradle build system
 
-### How to build application (Tested only on Linux)
+### How to build the application (Tested only on Linux)
 - clone repository
 - inside restapi directory execute gradle wrapper ( *gradlew.bat* on Windows or *gradlew* on Linux) with task deploy
 
@@ -44,7 +44,7 @@ Office endpoins are:
 > gradlew deploy
 ```
 
-### How to run application (Tested only on Linux)
+### How to run the application (Tested only on Linux)
 - change directory to deploy
 - execute:
 
@@ -52,6 +52,6 @@ Office endpoins are:
 > java -jar restapi-0.1-SNAPSHOT.jar
 ```
 
-- application serve documentation under [http://localhost:8080/doc/auto_doc.html](http://localhost:8080/doc/auto_doc.html)
-- application serve documentation for service endpoins under [http://localhost:8080/docs](http://localhost:8080/docs)
+- the application serves the documentation under [http://localhost:8080/doc/auto_doc.html](http://localhost:8080/doc/auto_doc.html)
+- the application serves the documentation for service endpoins under [http://localhost:8080/docs](http://localhost:8080/docs)
 - use your favorite client for example [Postman](https://www.getpostman.com/) and test on port 8080 
